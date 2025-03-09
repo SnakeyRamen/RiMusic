@@ -347,7 +347,7 @@ fun DefaultUiSettings() {
     var menuStyle by rememberPreference(menuStyleKey, MenuStyle.List)
     menuStyle = MenuStyle.List
     var transitionEffect by rememberPreference(transitionEffectKey, TransitionEffect.Scale)
-    transitionEffect = TransitionEffect.Scale
+    transitionEffect = TransitionEffect.None
     var enableCreateMonthlyPlaylists by rememberPreference(enableCreateMonthlyPlaylistsKey, true)
     enableCreateMonthlyPlaylists = true
     var showPipedPlaylists by rememberPreference(showPipedPlaylistsKey, true)
@@ -483,7 +483,7 @@ fun DefaultUiSettings() {
     var showRemainingSongTime by rememberPreference(showRemainingSongTimeKey, true)
     showRemainingSongTime = true
     var disableScrollingText by rememberPreference(disableScrollingTextKey, false)
-    disableScrollingText = false
+    disableScrollingText = true
     var effectRotationEnabled by rememberPreference(effectRotationKey, true)
     effectRotationEnabled = true
     var thumbnailTapEnabled by rememberPreference(thumbnailTapEnabledKey, true)
